@@ -4,11 +4,16 @@ function App() {
         <Container>
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
+                    <UserNameDisplay />
                     <TodoListCard />
                 </Col>
             </Row>
         </Container>
     );
+}
+
+function UserNameDisplay() {
+    return <h1>ToDo App by Masatoshi Tani</h1>;
 }
 
 function TodoListCard() {
